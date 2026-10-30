@@ -1,0 +1,2 @@
+# Evidence hashes describe exact bytes, including line endings.
+validation/evidence/** -text -whitespace

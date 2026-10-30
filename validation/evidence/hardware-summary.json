@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "parameter_set": 768,
+  "repetitions": 3,
+  "samples_per_repetition": 100,
+  "unique_test_inputs": 100,
+  "clock_hz": 16000000,
+  "cycles": {
+    "keygen_derand": {
+      "samples": 300,
+      "median": 1444249.5,
+      "min": 1443217,
+      "max": 1536251
+    },
+    "encaps_derand": {
+      "samples": 300,
+      "median": 1515464.0,
+      "min": 1514433,
+      "max": 1598018
+    },
+    "decaps": {
+      "samples": 300,
+      "median": 1874357.5,
+      "min": 1873341,
+      "max": 1956975
+    }
+  },
+  "stack_high_water_bytes": 18132,
+  "elf_sha256": "736fed9f86e86b43cc79e62e41dbfaf7afb64001fc3915ca8093c503cbd21a75",
+  "firmware_bin_sha256": "74f75ccd62735f2e2fcdb4d6c0f3fce4ca8f9bc753a4b81a27a813cf5602693e"
+}

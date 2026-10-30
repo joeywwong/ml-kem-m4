@@ -1,0 +1,23 @@
+<repo>\validation\build\mlkem768-stm32f407vg.elf  :
+section             size        addr
+.isr_vector          392   134217728
+.text              29184   134218144
+.ARM.exidx             8   134247328
+.results            1264   536870912
+.data                  0   536872176
+.bss                4800   536872176
+.stack             32768   536969216
+.ARM.attributes       44           0
+.debug_info        44266           0
+.debug_abbrev       2318           0
+.debug_loclists    32640           0
+.debug_aranges       680           0
+.debug_rnglists     3021           0
+.debug_macro       10988           0
+.debug_line        26309           0
+.debug_str         48750           0
+.debug_frame        2464           0
+.debug_line_str       75           0
+Total             239971
+
+

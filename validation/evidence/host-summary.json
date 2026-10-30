@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "parameter_set": 768,
+  "independent_test_inputs": 100,
+  "roundtrips": 100,
+  "implicit_rejection_shake256_checks": 100,
+  "invalid_public_key_checks": 100,
+  "invalid_secret_key_checks": 100,
+  "coins_sha256": "bdbcbdbcf3e51abe98a834bed485fb8be8f5e4c23ed72363a9cfaf4355a87b17",
+  "upstream": "08e1f3881ec140f79c2d1c14e482a32a782c5312"
+}

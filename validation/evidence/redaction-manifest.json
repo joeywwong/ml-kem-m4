@@ -1,0 +1,770 @@
+{
+  "format_version": 1,
+  "date": "2026-10-30",
+  "scope": "Original experimental evidence only; private originals retained locally outside the publication export.",
+  "binary_mask": {
+    "glob": "hardware-run-[123].bin",
+    "offset": 56,
+    "length": 8,
+    "replacement_hex": "0000000000000000"
+  },
+  "files": [
+    {
+      "path": "validation/evidence/acvp-pinned-ML-KEM-encapDecap-FIPS203-tr1.txt",
+      "label": "redacted public copy",
+      "original_sha256": "95b52fb6cae7bf3168b0bb29b21a986f22137b0a065f48eaa1f04df162bc2fd1",
+      "public_sha256": "b814b3afe1e513f300124513c8e826e22031999013c92d5181f90ea14e644941",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/acvp-pinned-ML-KEM-encapDecap-FIPS203.txt",
+      "label": "redacted public copy",
+      "original_sha256": "2f85ab62e0069454aba102ee877c2de17fcb005bfab077277a5336b6fb93b005",
+      "public_sha256": "ba48405600f49535e3d0eaf167b0e9cf87521aff7626caa1be7099d70b3bc376",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/acvp-pinned-ML-KEM-keyGen-FIPS203.txt",
+      "label": "redacted public copy",
+      "original_sha256": "b321f70e16d3f19e5b2bf58262da366771ef4ef791a5746ded27d90c83b44775",
+      "public_sha256": "95b500f6ea9da6c460bcd25a6110f4b1a3a254b1760d8191f24073434f42a245",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/acvp-summary.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "60729f48a8efb4fd4a7e00a1eb92262b788bc662460069529a901207677425ae",
+      "public_sha256": "60729f48a8efb4fd4a7e00a1eb92262b788bc662460069529a901207677425ae",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/acvp.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "6885fb94516dea1c6acae996eb29735e8c6d04e85c82a9c95ed9199194a86aeb",
+      "public_sha256": "6885fb94516dea1c6acae996eb29735e8c6d04e85c82a9c95ed9199194a86aeb",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/arm-toolchain.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "38e025aff417c4c5305ef5641f6883ecd3af95a2b66971c7443d039f1aadbf42",
+      "public_sha256": "38e025aff417c4c5305ef5641f6883ecd3af95a2b66971c7443d039f1aadbf42",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/backup-manifest.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "c5f4cdd97b36733cbcb940777edc0480624ff64f71dc22d3f82d0907e3d2a526",
+      "public_sha256": "c5f4cdd97b36733cbcb940777edc0480624ff64f71dc22d3f82d0907e3d2a526",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/backup-verification.txt",
+      "label": "redacted public copy",
+      "original_sha256": "68ade1a428bdfe46dde866d2a1caa0f67fba1ba77d2e4e1dfc21d6ce353febb5",
+      "public_sha256": "4937e440cb920851c97261a953a72666daa9b08d4144c0c4407ac35bcabeaf59",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/board-compile-mlkem_native.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/board-compile-startup.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/board-compile-validation.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/board-identification.txt",
+      "label": "redacted public copy",
+      "original_sha256": "9087eaef449a1f7fe7a29e6fceab6f199d5e6bac73b30565eb2d970bc0770e6f",
+      "public_sha256": "75022ecec9f2afc1e99e766c32fdbbb4053245e7e323f6a16af1f4852b85a24c",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/board-link.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/board-objcopy.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/board-upstream-pin.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "d60c1a9e7bc687106932b887984993ee96f8b66a6570750dea1336a1dac2b902",
+      "public_sha256": "d60c1a9e7bc687106932b887984993ee96f8b66a6570750dea1336a1dac2b902",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/board-upstream-status.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/build-acvp-1024.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/build-acvp-512.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/build-acvp-768.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/build-functional-1024.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/build-functional-512.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/build-functional-768.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/build-host-corpus.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/commands.jsonl",
+      "label": "redacted public copy",
+      "original_sha256": "673110e83317b228c2deb5732bc59dc22757f672c2df03fd5c8fd6e6a17e7eb6",
+      "public_sha256": "3b19ed361379a91691db3ee96274d9f2b14e823cc5612c9de89ac75d9c14ad85",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/elf-validation.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "46fa34c65c7df73f494204f77c5ede85710cf0454b8c5e37ecc0dc94cae6a273",
+      "public_sha256": "46fa34c65c7df73f494204f77c5ede85710cf0454b8c5e37ecc0dc94cae6a273",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/elf-validator-tests.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "81a2076b8e4a6c189e3fdd9a55119a84055258c261b15bcd35a9393c11c2bb9e",
+      "public_sha256": "81a2076b8e4a6c189e3fdd9a55119a84055258c261b15bcd35a9393c11c2bb9e",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/fetch-mlkem-native-pin.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "d60c1a9e7bc687106932b887984993ee96f8b66a6570750dea1336a1dac2b902",
+      "public_sha256": "d60c1a9e7bc687106932b887984993ee96f8b66a6570750dea1336a1dac2b902",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/fetch-mlkem-native-status.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/fetch-pqm4-pin.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "d84bb630b684a73f66a06b0eaa63291144a2441bb55d576d2feef72310a72bbf",
+      "public_sha256": "d84bb630b684a73f66a06b0eaa63291144a2441bb55d576d2feef72310a72bbf",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/fetch-pqm4-status.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/firmware-objdump.txt",
+      "label": "redacted public copy",
+      "original_sha256": "575eb987d1807fcbd5e131fcf74dd142b1cfd71b75eec9f850abdaa1a5ec6c3e",
+      "public_sha256": "5829e594534c8bd6f1d0f50b583e2599354a0f9a1849d0a4fd987896514d1064",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/firmware-readelf.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "5bb1ec03c60bd6a72b91b2581edecee50785396d97f0337520375a3b56eb0bc8",
+      "public_sha256": "5bb1ec03c60bd6a72b91b2581edecee50785396d97f0337520375a3b56eb0bc8",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/firmware-size.txt",
+      "label": "redacted public copy",
+      "original_sha256": "0fef5ef14145396060f91c228b1d52e6687c18f5d90e750394cda775124f31f5",
+      "public_sha256": "69b579be2168da3960ee3b7fe996310e0e1200560f8089ffe7f325fb16e35897",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/flash-backup.txt",
+      "label": "redacted public copy",
+      "original_sha256": "a051997d57b842f020587235dc9a22b2e6c3f4ece330bb1300b0259d0c2cb798",
+      "public_sha256": "b09b1690e663feec1d5c65f06de6bd28ffa716b33f82af173c9ccc1f6cab0b84",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/flash-test-image.txt",
+      "label": "redacted public copy",
+      "original_sha256": "1db9213812adc7808fb812ed876f4f5e36ab36ada414e522e8dfed46efb7d4a9",
+      "public_sha256": "2d6f377a5af19cf4cc0453f153a7b758fd41de1817b637f63c7602ec8b82dbce",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/functional-1024.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "9e0db19d5c986d7b31b57699e7c124c899361e871b6bd2927c25e47a806da8bd",
+      "public_sha256": "9e0db19d5c986d7b31b57699e7c124c899361e871b6bd2927c25e47a806da8bd",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/functional-512.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "2ea95119ad280d0c388cda4c7299ceeaafc69f25533879247378e5d4b319b3a9",
+      "public_sha256": "2ea95119ad280d0c388cda4c7299ceeaafc69f25533879247378e5d4b319b3a9",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/functional-768.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "d0ac6b07206d1c0fb5390d91b93988ca82dd7a33cc065434ebc75d82e4831823",
+      "public_sha256": "d0ac6b07206d1c0fb5390d91b93988ca82dd7a33cc065434ebc75d82e4831823",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-1.txt",
+      "label": "redacted public copy",
+      "original_sha256": "9b8607f66fdd5eb759fcb0312624fe94afb6e8ad85444e11e158c404fe2bad96",
+      "public_sha256": "b6c646b6c43a2e1996f56da83116c01abc838071c4424a5b4c7e1a854f04aeed",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-10.txt",
+      "label": "redacted public copy",
+      "original_sha256": "af3b8c7b9399583e5bbb8e005878c3409b773178989e37600bdfca54a7b0957c",
+      "public_sha256": "c87a9111a18b5a9f4a4b0b43dc0294a3b4edbc664dd2d0317021b231a6deeff1",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-11.txt",
+      "label": "redacted public copy",
+      "original_sha256": "576dbc08614352a28571823a866b7bbde47911ae10935ac2db94009b56e7ac09",
+      "public_sha256": "5bcf34790c4c36d34a2e1031db1f92d11a4b2f1f5b4a2a1b23aa876ea7d81bdd",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-2.txt",
+      "label": "redacted public copy",
+      "original_sha256": "af3b8c7b9399583e5bbb8e005878c3409b773178989e37600bdfca54a7b0957c",
+      "public_sha256": "c87a9111a18b5a9f4a4b0b43dc0294a3b4edbc664dd2d0317021b231a6deeff1",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-3.txt",
+      "label": "redacted public copy",
+      "original_sha256": "13d9582bc55f5009bdf6fee2685aee267bcd54907b2c0d2d3690064fe5c41c71",
+      "public_sha256": "c59ccf1a83fddf972b65162c41490c6b113d3dd31ba8fac4977690a818c2e0b2",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-4.txt",
+      "label": "redacted public copy",
+      "original_sha256": "13d9582bc55f5009bdf6fee2685aee267bcd54907b2c0d2d3690064fe5c41c71",
+      "public_sha256": "c59ccf1a83fddf972b65162c41490c6b113d3dd31ba8fac4977690a818c2e0b2",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-5.txt",
+      "label": "redacted public copy",
+      "original_sha256": "60f3e30c5a33389b184f609b315ad2bb00006f774546e8d7bcd460b44957f86d",
+      "public_sha256": "895aab40e5c5567e4561c3fab102aa35e018183012c7cc98e04fe94859094224",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-6.txt",
+      "label": "redacted public copy",
+      "original_sha256": "576dbc08614352a28571823a866b7bbde47911ae10935ac2db94009b56e7ac09",
+      "public_sha256": "5bcf34790c4c36d34a2e1031db1f92d11a4b2f1f5b4a2a1b23aa876ea7d81bdd",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-7.txt",
+      "label": "redacted public copy",
+      "original_sha256": "576dbc08614352a28571823a866b7bbde47911ae10935ac2db94009b56e7ac09",
+      "public_sha256": "5bcf34790c4c36d34a2e1031db1f92d11a4b2f1f5b4a2a1b23aa876ea7d81bdd",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-8.txt",
+      "label": "redacted public copy",
+      "original_sha256": "60f3e30c5a33389b184f609b315ad2bb00006f774546e8d7bcd460b44957f86d",
+      "public_sha256": "895aab40e5c5567e4561c3fab102aa35e018183012c7cc98e04fe94859094224",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-1-9.txt",
+      "label": "redacted public copy",
+      "original_sha256": "13d9582bc55f5009bdf6fee2685aee267bcd54907b2c0d2d3690064fe5c41c71",
+      "public_sha256": "c59ccf1a83fddf972b65162c41490c6b113d3dd31ba8fac4977690a818c2e0b2",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-1.txt",
+      "label": "redacted public copy",
+      "original_sha256": "785230db48d189919fcd433247ab5a4e042d4d67b29ddb666b6e91a9679419ba",
+      "public_sha256": "fc23f77d2b2a241eb29cc02636c77c4bcee44dec44ffa62d1b5597da22f9b27c",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-10.txt",
+      "label": "redacted public copy",
+      "original_sha256": "a2f338737715530074326a87880e1d26fe1eb6212643ef6aae6c936a3d2688ac",
+      "public_sha256": "ad38e09c42b03830ad3377b160f482b3cc45d8693d82fad5e867299e6c96041c",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-11.txt",
+      "label": "redacted public copy",
+      "original_sha256": "a2f338737715530074326a87880e1d26fe1eb6212643ef6aae6c936a3d2688ac",
+      "public_sha256": "ad38e09c42b03830ad3377b160f482b3cc45d8693d82fad5e867299e6c96041c",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-2.txt",
+      "label": "redacted public copy",
+      "original_sha256": "a2f338737715530074326a87880e1d26fe1eb6212643ef6aae6c936a3d2688ac",
+      "public_sha256": "ad38e09c42b03830ad3377b160f482b3cc45d8693d82fad5e867299e6c96041c",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-3.txt",
+      "label": "redacted public copy",
+      "original_sha256": "81f89ce63ec67da2cd7c2310c415ade1e9f30685564e7dfafe3e335d8ab6c3ba",
+      "public_sha256": "0193b26e62c9bb168b79179d71a84608f3b39f6c8bcb3b0d3c930c5e73231758",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-4.txt",
+      "label": "redacted public copy",
+      "original_sha256": "81f89ce63ec67da2cd7c2310c415ade1e9f30685564e7dfafe3e335d8ab6c3ba",
+      "public_sha256": "0193b26e62c9bb168b79179d71a84608f3b39f6c8bcb3b0d3c930c5e73231758",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-5.txt",
+      "label": "redacted public copy",
+      "original_sha256": "31d63f9c4b68a491fe85e42fee538a276774e7c330030d3d39d016c35a1d61e7",
+      "public_sha256": "51ec42cdfaa8144c41a24ad1245292931ea8f590987ce07be5a210af64f8f93e",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-6.txt",
+      "label": "redacted public copy",
+      "original_sha256": "a2f338737715530074326a87880e1d26fe1eb6212643ef6aae6c936a3d2688ac",
+      "public_sha256": "ad38e09c42b03830ad3377b160f482b3cc45d8693d82fad5e867299e6c96041c",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-7.txt",
+      "label": "redacted public copy",
+      "original_sha256": "81f89ce63ec67da2cd7c2310c415ade1e9f30685564e7dfafe3e335d8ab6c3ba",
+      "public_sha256": "0193b26e62c9bb168b79179d71a84608f3b39f6c8bcb3b0d3c930c5e73231758",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-8.txt",
+      "label": "redacted public copy",
+      "original_sha256": "a2f338737715530074326a87880e1d26fe1eb6212643ef6aae6c936a3d2688ac",
+      "public_sha256": "ad38e09c42b03830ad3377b160f482b3cc45d8693d82fad5e867299e6c96041c",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-2-9.txt",
+      "label": "redacted public copy",
+      "original_sha256": "31d63f9c4b68a491fe85e42fee538a276774e7c330030d3d39d016c35a1d61e7",
+      "public_sha256": "51ec42cdfaa8144c41a24ad1245292931ea8f590987ce07be5a210af64f8f93e",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-1.txt",
+      "label": "redacted public copy",
+      "original_sha256": "d46b390f652cc87dd508a0558bb14249d8fd94950f711a0d915f5f3c3281d919",
+      "public_sha256": "76aa99083bd728b9512ccc430d1dce6f3c693730a1973a29427548cb619f8daf",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-10.txt",
+      "label": "redacted public copy",
+      "original_sha256": "bf35c0bfb72d35e48a7f3b99094b2755beb0625f75e4eb637e3a689d0c834d62",
+      "public_sha256": "72082647a38ed714667a4edce1a01aa1acae6d84ad5c1b9b02e1e52d440bd512",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-11.txt",
+      "label": "redacted public copy",
+      "original_sha256": "554d4794133aa91560e938c8727c4e4c8890caa6576efd2fee56f0cdd1466d40",
+      "public_sha256": "6108cb7eb9892fb0cf7c31e2164ee0fd8cf18e324a13ba59a6e4312f9837c2a4",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-2.txt",
+      "label": "redacted public copy",
+      "original_sha256": "bf35c0bfb72d35e48a7f3b99094b2755beb0625f75e4eb637e3a689d0c834d62",
+      "public_sha256": "72082647a38ed714667a4edce1a01aa1acae6d84ad5c1b9b02e1e52d440bd512",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-3.txt",
+      "label": "redacted public copy",
+      "original_sha256": "bf35c0bfb72d35e48a7f3b99094b2755beb0625f75e4eb637e3a689d0c834d62",
+      "public_sha256": "72082647a38ed714667a4edce1a01aa1acae6d84ad5c1b9b02e1e52d440bd512",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-4.txt",
+      "label": "redacted public copy",
+      "original_sha256": "554d4794133aa91560e938c8727c4e4c8890caa6576efd2fee56f0cdd1466d40",
+      "public_sha256": "6108cb7eb9892fb0cf7c31e2164ee0fd8cf18e324a13ba59a6e4312f9837c2a4",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-5.txt",
+      "label": "redacted public copy",
+      "original_sha256": "554d4794133aa91560e938c8727c4e4c8890caa6576efd2fee56f0cdd1466d40",
+      "public_sha256": "6108cb7eb9892fb0cf7c31e2164ee0fd8cf18e324a13ba59a6e4312f9837c2a4",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-6.txt",
+      "label": "redacted public copy",
+      "original_sha256": "bf35c0bfb72d35e48a7f3b99094b2755beb0625f75e4eb637e3a689d0c834d62",
+      "public_sha256": "72082647a38ed714667a4edce1a01aa1acae6d84ad5c1b9b02e1e52d440bd512",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-7.txt",
+      "label": "redacted public copy",
+      "original_sha256": "bf35c0bfb72d35e48a7f3b99094b2755beb0625f75e4eb637e3a689d0c834d62",
+      "public_sha256": "72082647a38ed714667a4edce1a01aa1acae6d84ad5c1b9b02e1e52d440bd512",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-8.txt",
+      "label": "redacted public copy",
+      "original_sha256": "bf35c0bfb72d35e48a7f3b99094b2755beb0625f75e4eb637e3a689d0c834d62",
+      "public_sha256": "72082647a38ed714667a4edce1a01aa1acae6d84ad5c1b9b02e1e52d440bd512",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-poll-3-9.txt",
+      "label": "redacted public copy",
+      "original_sha256": "bf35c0bfb72d35e48a7f3b99094b2755beb0625f75e4eb637e3a689d0c834d62",
+      "public_sha256": "72082647a38ed714667a4edce1a01aa1acae6d84ad5c1b9b02e1e52d440bd512",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-run-1.bin",
+      "label": "redacted public copy",
+      "original_sha256": "ede178e45f25788f3aec99ea7b5ccd6b388fc58b8847a6d00d46f979a1c7e387",
+      "public_sha256": "7d5c862497cf1aa6dd5345c0e40728e6d6423052de0d9898497c5a78c5d7a224",
+      "transformations": [
+        "Zero byte offsets 56 through 63 (two unused reserved words)."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-run-1.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "0dc1035c1b70c1d7e571718ec020937d11eab57f9765fdacc1f87b6e77ea80f2",
+      "public_sha256": "0dc1035c1b70c1d7e571718ec020937d11eab57f9765fdacc1f87b6e77ea80f2",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/hardware-run-2.bin",
+      "label": "redacted public copy",
+      "original_sha256": "9d1a0ed42ffc111fe1cd72c6811860e3f4be5590f023ee0c9c90a6d2969160e1",
+      "public_sha256": "a885a4872b785192340112e12f66c4e77d788d2b2fd11ac33bb20eb865fa9294",
+      "transformations": [
+        "Zero byte offsets 56 through 63 (two unused reserved words)."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-run-2.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "5d99c6a6a570497830876a4ca76676e5a6578775364daa55573da04f3228c68a",
+      "public_sha256": "5d99c6a6a570497830876a4ca76676e5a6578775364daa55573da04f3228c68a",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/hardware-run-3.bin",
+      "label": "redacted public copy",
+      "original_sha256": "23d8b7e5aa7409f65427ef773f55787cf045986177b91600c60e2b68c49f1537",
+      "public_sha256": "78feb650f5a8cb8c478a9e4b1bb8eeb11d98e8c529d75d0738132e4e127476f4",
+      "transformations": [
+        "Zero byte offsets 56 through 63 (two unused reserved words)."
+      ]
+    },
+    {
+      "path": "validation/evidence/hardware-run-3.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "a410ae22d666bbd6aa6f8dc45b9c9d43ae580f861028e0376a69ec5c842a4052",
+      "public_sha256": "a410ae22d666bbd6aa6f8dc45b9c9d43ae580f861028e0376a69ec5c842a4052",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/hardware-summary.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "c2d9a2567799c4df4c5c4803ca40b4f38c423fb846f2186e70f240d7307f4ffa",
+      "public_sha256": "c2d9a2567799c4df4c5c4803ca40b4f38c423fb846f2186e70f240d7307f4ffa",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/host-corpus.jsonl",
+      "label": "unchanged historical evidence",
+      "original_sha256": "b54944cacc9f91cf7cf861068e9467a8e4bd6532246ad2f5b626f98f938c0653",
+      "public_sha256": "b54944cacc9f91cf7cf861068e9467a8e4bd6532246ad2f5b626f98f938c0653",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/host-summary.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e333e80027b484be18ecf878a51fd68eb49938a5d92d78f9fba3064be0595409",
+      "public_sha256": "e333e80027b484be18ecf878a51fd68eb49938a5d92d78f9fba3064be0595409",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/host-toolchain.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "b413ab0bf4deba50228036b22cfc5748e4022116ef1b9902602779e9a4a13b50",
+      "public_sha256": "b413ab0bf4deba50228036b22cfc5748e4022116ef1b9902602779e9a4a13b50",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/option-bytes-before.txt",
+      "label": "redacted public copy",
+      "original_sha256": "7011271e6d0d2d94975ae4b9b429abe0a63bdb7b2696971b344628814e16e65a",
+      "public_sha256": "89790ae380e303149a175ef74bf851996fc1861f675b04d9405b50333c7500d6",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/preflash-identification.txt",
+      "label": "redacted public copy",
+      "original_sha256": "1c8bdd34a36402caa9121282a837993494b204035d653786b7cfd0c15f0ab7d3",
+      "public_sha256": "2303bd46514e192035b6c0ed1b93fe15e256d66a0d4188d73d51b14f5e470de1",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/reset-2.txt",
+      "label": "redacted public copy",
+      "original_sha256": "42fa32ea033e7a406aba7031fcf89894cc49b343c6a77aac8a2f734c5898656a",
+      "public_sha256": "bcc5a7af4dcd11516bc98eb09e8d07a44855e032d24f98201248891a4d537b39",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/reset-3.txt",
+      "label": "redacted public copy",
+      "original_sha256": "42fa32ea033e7a406aba7031fcf89894cc49b343c6a77aac8a2f734c5898656a",
+      "public_sha256": "bcc5a7af4dcd11516bc98eb09e8d07a44855e032d24f98201248891a4d537b39",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/restart-original-firmware.txt",
+      "label": "redacted public copy",
+      "original_sha256": "89de1c3a5c9dec16c9dcd89adfcc9abfa0d8d357e160187227f97da9a59d9c00",
+      "public_sha256": "abfad2cc4feb3f1686dc86caabf20b8611165d6cc47ca49d9070d28f8264bc01",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/restoration.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "691a8d130d1d5f650fb6bb328320e0ee55ed652162427ff6539ae20bb45ffcc4",
+      "public_sha256": "691a8d130d1d5f650fb6bb328320e0ee55ed652162427ff6539ae20bb45ffcc4",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/restore-firmware.txt",
+      "label": "redacted public copy",
+      "original_sha256": "ef49bdddc79a2553ecdd17bd008eb614a94c37cd246671e3a7c9c979a6d6e4f4",
+      "public_sha256": "817dc37b9e4a445f83c36848d4685442d9953dbfbc443c12418b66e77ee43045",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/restore-readback.txt",
+      "label": "redacted public copy",
+      "original_sha256": "b5e2321bef81c593d451cdbd0b38031c7e126a3d182c34497bd2fa32916498a1",
+      "public_sha256": "e6e7ea446a8d3d3ea67ee7360b3eb68bbc7a8ab94a75448fd4b39111ea3f2964",
+      "transformations": [
+        "Replace local user/workspace/installation prefixes and/or ST-Link serial values with labeled placeholders; preserve all other bytes."
+      ]
+    },
+    {
+      "path": "validation/evidence/source-hashes.json",
+      "label": "unchanged historical evidence",
+      "original_sha256": "37245817154f9c8014fc1ceb608ecd43921708832e97fbde4a39e594617e7e5b",
+      "public_sha256": "37245817154f9c8014fc1ceb608ecd43921708832e97fbde4a39e594617e7e5b",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/test-coins.bin",
+      "label": "unchanged historical evidence",
+      "original_sha256": "bdbcbdbcf3e51abe98a834bed485fb8be8f5e4c23ed72363a9cfaf4355a87b17",
+      "public_sha256": "bdbcbdbcf3e51abe98a834bed485fb8be8f5e4c23ed72363a9cfaf4355a87b17",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/upstream-pin.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "d60c1a9e7bc687106932b887984993ee96f8b66a6570750dea1336a1dac2b902",
+      "public_sha256": "d60c1a9e7bc687106932b887984993ee96f8b66a6570750dea1336a1dac2b902",
+      "transformations": []
+    },
+    {
+      "path": "validation/evidence/upstream-status.txt",
+      "label": "unchanged historical evidence",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformations": []
+    }
+  ]
+}

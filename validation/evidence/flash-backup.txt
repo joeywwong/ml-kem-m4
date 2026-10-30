@@ -1,0 +1,30 @@
+      -------------------------------------------------------------------
+                       STM32CubeProgrammer v2.23.0                  
+      -------------------------------------------------------------------
+
+ST-LINK SN  : <probe-1>
+ST-LINK FW  : V2J46M33
+Board       : --
+Voltage     : 3.04V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x413
+Revision ID : --
+Device name : STM32F405xx/F407xx/F415xx/F417xx
+NVM size    : 1 MBytes
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0x31
+
+
+UPLOADING ...
+  File          : validation/backups/original-flash.bin
+  Size          : 1048576 Bytes
+  Address:      : 0x8000000
+Read progress:
+�������������������������������������������������� 0%
+�������������������������������������������������� 100%
+
+Data read successfully
+Time elapsed during read operation is: 00:00:05.846

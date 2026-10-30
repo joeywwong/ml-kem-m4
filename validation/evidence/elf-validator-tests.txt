@@ -1,0 +1,10 @@
+test_flash_capacity_too_small (__main__.ElfBoundsTests.test_flash_capacity_too_small) ... ok
+test_flash_load_address_overflow (__main__.ElfBoundsTests.test_flash_load_address_overflow) ... ok
+test_ram_extent_overflow (__main__.ElfBoundsTests.test_ram_extent_overflow) ... ok
+test_valid_image (__main__.ElfBoundsTests.test_valid_image) ... ok
+test_wrong_architecture (__main__.ElfBoundsTests.test_wrong_architecture) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.066s
+
+OK

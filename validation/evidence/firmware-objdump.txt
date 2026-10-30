@@ -1,0 +1,41 @@
+
+<repo>\validation\build\mlkem768-stm32f407vg.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .isr_vector   00000188  08000000  08000000  00001000  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .text         00007200  080001a0  080001a0  000011a0  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .ARM.exidx    00000008  080073a0  080073a0  000083a0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .results      000004f0  20000000  20000000  00009000  2**2
+                  ALLOC
+  4 .data         00000000  200004f0  200004f0  000083a8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  5 .bss          000012c0  200004f0  080073a8  000084f0  2**2
+                  ALLOC
+  6 .stack        00008000  20018000  20018000  00009000  2**0
+                  ALLOC
+  7 .ARM.attributes 0000002c  00000000  00000000  000083a8  2**0
+                  CONTENTS, READONLY
+  8 .debug_info   0000acea  00000000  00000000  000083d4  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_abbrev 0000090e  00000000  00000000  000130be  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_loclists 00007f80  00000000  00000000  000139cc  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_aranges 000002a8  00000000  00000000  0001b950  2**3
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_rnglists 00000bcd  00000000  00000000  0001bbf8  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_macro  00002aec  00000000  00000000  0001c7c5  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_line   000066c5  00000000  00000000  0001f2b1  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_str    0000be6e  00000000  00000000  00025976  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_frame  000009a0  00000000  00000000  000317e4  2**2
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 17 .debug_line_str 0000004b  00000000  00000000  00032184  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS

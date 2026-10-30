@@ -1,0 +1,19 @@
+# Fetched dependencies, generated outputs, and private device backups
+/validation/upstream/
+/validation/build/
+/validation/backups/
+/validation/publication-export/
+
+# Local instructions; not required to reproduce this repository
+/docs/
+
+# Python, editors, and operating systems
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "flash_limit_kib": 1024,
+  "ram_limit_kib": 128,
+  "entry": "0x80030c1",
+  "segments": [
+    {
+      "vaddr": "0x8000000",
+      "paddr": "0x8000000",
+      "file_bytes": 29608,
+      "memory_bytes": 29608
+    },
+    {
+      "vaddr": "0x200004f0",
+      "paddr": "0x80073a8",
+      "file_bytes": 0,
+      "memory_bytes": 4800
+    },
+    {
+      "vaddr": "0x20000000",
+      "paddr": "0x20000000",
+      "file_bytes": 0,
+      "memory_bytes": 1264
+    },
+    {
+      "vaddr": "0x20018000",
+      "paddr": "0x20018000",
+      "file_bytes": 0,
+      "memory_bytes": 32768
+    }
+  ],
+  "elf_sha256": "736fed9f86e86b43cc79e62e41dbfaf7afb64001fc3915ca8093c503cbd21a75"
+}
