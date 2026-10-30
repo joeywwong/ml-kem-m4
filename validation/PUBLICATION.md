@@ -4,6 +4,16 @@ The working tree contains labeled public copies. The original harness,
 scripts and documentation are licensed under [MIT](../LICENSE), as selected
 by the owner. [Third-party terms](../THIRD_PARTY_NOTICES.md) remain intact.
 
+**History cleanup completed on 2026-10-30 with the owner's approval.** The
+GitHub default branch `validation/mlkem-host-board` was replaced using an
+exact expected-commit lease. Clean history begins at
+`25db30da535346ad0087b4660cfea7b3fa6bc097`, which has no parents. A fresh
+download verified all 116 files against the reviewed snapshot, one remote
+branch and no tags. The existing local checkout was aligned without
+overwriting working files, and future local commits use a GitHub noreply
+email. The repository was private at verification and visibility was not
+changed during cleanup. Follow-up commits record these completion notes.
+
 ## Changes to evidence
 
 - Local usernames, workspace and installation prefixes use consistent
@@ -51,6 +61,9 @@ dependencies and build outputs, and verifies every archived byte. Its default
 output is the ignored `validation/publication-export/ml-kem-m4-public.zip`.
 It refuses to overwrite an existing archive; use `--output` for a new name.
 The ZIP contains source and public evidence, with **no `.git` history**.
+The final export including these cleanup notes is
+`validation/publication-export/ml-kem-m4-public-cleaned.zip`; regenerate a
+later snapshot with `--output` and a fresh filename.
 
 ## Checks completed during preparation
 
@@ -74,17 +87,20 @@ Fresh outputs remain under ignored `validation/build/publication-check/`.
 The earlier 435-case ACVP result is historical and was not rerun for these
 publication-only changes.
 
-## Existing Git history
+## Original Git history and earlier exposure
 
-Earlier commits in this checkout still contain original paths, raw reserved
-bytes and author email metadata. Committing these edits alone will not remove
-that material. A Git bundle of the original history is deliberately private.
-The existing repository and any earlier remote copies must not be treated as
-sanitized by this working-tree change.
+Before cleanup, earlier commits contained original paths, raw reserved bytes
+and author email metadata. A normal commit would have retained that material
+in branch history. Instead, the owner authorized replacement with the clean
+root commit above. The original history and local Git configuration remain
+in the ignored private backup. The old commits are not ancestors of the
+current default branch, and there were no other remote branches or tags at
+verification. Do not push the private history bundle or old clones.
 
-For a clean public repository, extract the verified ZIP into a new directory
-and initialize fresh Git history there. Choose the desired public author
-name/email before the first commit. No existing branch/history or remote
-visibility has been changed, and nothing has been committed or pushed by this
-publication work. If earlier copies were already shared, this export cannot
-remove those copies.
+Cleanup replaces the branch's reachable history; it cannot retract copies
+already cloned or forked, or guarantee deletion of cached GitHub objects.
+Earlier remote copies should not be treated as sanitized automatically.
+Any other old clones should be replaced with a fresh clone before future
+work. The original project workspace has already been aligned and can be
+used for normal commits and pushes. Repository visibility remains the
+owner's choice.

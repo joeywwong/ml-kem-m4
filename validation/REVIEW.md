@@ -6,13 +6,18 @@ are zeroed and labeled in a hash manifest. Unmodified originals and original
 Git history are retained privately. The owner selected MIT for original work.
 Current firmware source initializes both reserved words. See
 [PUBLICATION.md](PUBLICATION.md) for verification and the history-free export.
-Earlier Git commits remain unredacted; publishing this checkout's existing
-history would still disclose the earlier material.
+The owner subsequently authorized a history replacement. The default branch
+now starts at the sanitized root commit, and a fresh download verified its
+contents. Original history is retained only in the private local backup and
+may persist in previously shared copies or cached objects. See the completion
+record in PUBLICATION.md.
 
 **Historical technical-review verdict: READY WITH MINOR CAVEATS.** The
 technical checks below describe the earlier review, before publication
 sanitization. Neither that review nor this publication preparation committed,
-pushed, changed visibility or accessed the STM32 device.
+pushed, changed visibility or accessed the STM32 device. The later authorized
+history cleanup committed and pushed the sanitized snapshot; it did not
+change visibility or access hardware.
 
 ## Scope and changes
 
@@ -30,7 +35,7 @@ The historical [source-hash manifest](evidence/source-hashes.json) remains intac
 | Reruns overwrite named evidence/build outputs | Medium | Added and exercised output overrides; documented host-only workflow | Defaults still overwrite outputs; use fresh override directories |
 | VE marking report conflicts with 1 MiB register observation | Medium | Documented direct observations versus uncertain physical identification | No committed photo; resolve before future programming |
 | Exclusions existed only in `.git/info/exclude` | Medium | Added `.gitignore`; verified no tracked files match exclusions | Ignore rules cannot remove history or prevent forced addition |
-| Local paths and probe serial in recorded logs/history | Medium | Public copies redacted; originals retained privately; history-free export provided | Existing local/remote history is not sanitized |
+| Local paths and probe serial in recorded logs/history | Medium | Public copies redacted; default branch replaced with clean history; originals retained privately | Previously shared copies and cached objects may remain |
 | Two uninitialized reserved words in raw RAM reports | Low | Public copies mask exactly eight bytes; current firmware initializes both words | Historical measurements still describe the original image |
 | No license for original code/documentation | Low | Owner selected MIT; root license and third-party attribution added | Third-party terms remain applicable |
 | ELF/debug-file size can be confused with flash usage | Low | README reports 29,608-byte binary, 6,064-byte static SRAM, separate stack reservation | Stack watermark is approximate, whole-harness only |
@@ -70,7 +75,7 @@ Before sanitization, recorded logs contained local installation/user paths and 4
 
 No credentials, access tokens, private-key PEM blocks or original-firmware dumps were found by targeted content/pattern inspection. This is a bounded audit of locally available history, not a guarantee about inaccessible remote refs, deleted remote objects or every possible secret encoding. The four tracked binary files are three decoded RAM result blocks and the 9,600-byte public test-coin fixture. Derived shared/rejection secrets in `host-corpus.jsonl` are deliberate public test data. The three full-flash backup/readback files remain local and ignored; their hashes and recovery logs are retained as evidence. No vendored upstream source or generated executables are tracked.
 
-The recommended public-copy redaction has now been performed: originals are private, placeholders are consistent, exactly eight reserved bytes per binary are masked, and each evidence file is labeled with original/public hashes and transformations in the manifest. Commands, return/status text, device-family/register values, measurements and firmware hashes are preserved apart from the documented metadata substitutions. No history rewrite was performed. The export omits all Git metadata and earlier unredacted objects.
+The recommended public-copy redaction has now been performed: originals are private, placeholders are consistent, exactly eight reserved bytes per binary are masked, and each evidence file is labeled with original/public hashes and transformations in the manifest. Commands, return/status text, device-family/register values, measurements and firmware hashes are preserved apart from the documented metadata substitutions. The later owner-authorized cleanup replaced the default branch with a clean root commit. The export also omits all Git metadata and earlier unredacted objects.
 
 ## Licensing and attribution
 
@@ -81,8 +86,8 @@ At the owner's selection, the original harness, scripts and documentation now us
 ## Remaining owner steps
 
 1. Review the sanitized files and [publication notes](PUBLICATION.md).
-2. Publish from the verified history-free export using fresh history and the desired public author metadata. Do not expose this checkout's earlier history as if it had been sanitized.
+2. The clean-history replacement is complete. Use the cleaned default branch and local checkout; replace any other old clones before future work.
 3. Keep the private snapshot and original firmware backups private; do not force-add ignored paths.
-4. Ensure any shared URL opens the intended public snapshot and its root README. No push or visibility change was performed here.
+4. Ensure any shared URL opens the intended sanitized snapshot and its root README. The cleanup pushed clean history and left visibility private at verification.
 
 No additional board run is needed for sharing this documented experiment. Resolve physical part identification before any future programming, and describe future side-channel work as planned.

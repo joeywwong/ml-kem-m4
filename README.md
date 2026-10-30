@@ -103,8 +103,10 @@ unused bytes per historical RAM record have been zeroed. All 900 cycle values
 and measurement summaries are unchanged. See the [evidence manifest](validation/evidence/redaction-manifest.json)
 and [publication guide](validation/PUBLICATION.md). The current firmware source
 initializes those bytes; the benchmark tables describe the historical image.
-For publication without the earlier unredacted Git history, use the verified
-history-free export described in that guide.
+On 2026-10-30, the default branch was replaced with clean history beginning
+at the sanitized snapshot. The local checkout follows that cleaned history.
+Original history remains in the ignored private backup; previously shared
+copies and cached commits may still exist. See the publication guide for details.
 
 ## References
 
