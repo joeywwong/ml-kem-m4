@@ -6,6 +6,15 @@ This repository records real ML-KEM-768 execution on a tested STM32F407 board, i
 
 ## What this project demonstrates — short summary
 
+**2026-11-01 build-only continuation:** a new
+[instrumentation preparation script](validation/scripts/prepare_leakage_probe.py)
+creates an isolated derivative around secret/ciphertext polynomial multiplication.
+It passed 435 ACVP cases and a 100-case host corpus and cross-compiled for Cortex-M4;
+[the new summary](validation/evidence/leakage-preparation-20261101.json) records
+the evidence. Hooks are RAM markers, not GPIO triggers. No board was flashed,
+reset, or measured in this continuation; historical results below are preserved.
+Local three-pass notes are under `docs/notes/` (already ignored by this repository).
+
 This project demonstrates reproducible validation and benchmarking of ML-KEM-768 on an STM32F407 Cortex-M4 using unmodified mlkem-native code. It connects host tests and NIST ACVP vectors to on-device shared-secret checks, measures cycle counts and memory use, and records restoration of the original firmware. It provides a foundation for future physical side-channel research; no leakage measurements or attacks were performed.
 
 ## Objectives

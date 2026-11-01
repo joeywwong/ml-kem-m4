@@ -1,0 +1,116 @@
+{
+  "status": "VERIFIED HOST; PREPARED FIRMWARE; NO DEVICE RUN",
+  "upstream": "08e1f3881ec140f79c2d1c14e482a32a782c5312",
+  "instrumentation": "RAM marker hooks around secret/ciphertext basemul in mlk_indcpa_dec; no GPIO adapter",
+  "host_cases": 100,
+  "marker_pairs_checked": 300,
+  "acvp_cases": 435,
+  "original_indcpa_sha256": "574e812a6bc5b7771191546ae8be409468adfbba85312e0a92842ef572b2a74d",
+  "derived_indcpa_sha256": "3fb2fb4d7908ed89259a957f0dcf61d99c7990bb59d8b8d24afa03e1b7ecb959",
+  "crypto_scope": "full ML-KEM with instrumented operation boundaries; no scalar surrogate substituted",
+  "elf": {
+    "status": "PASS",
+    "flash_limit_kib": 512,
+    "ram_limit_kib": 128,
+    "entry": "0x80030e9",
+    "segments": [
+      {
+        "vaddr": "0x8000000",
+        "paddr": "0x8000000",
+        "file_bytes": 29640,
+        "memory_bytes": 29640
+      },
+      {
+        "vaddr": "0x200004f0",
+        "paddr": "0x80073c8",
+        "file_bytes": 0,
+        "memory_bytes": 4812
+      },
+      {
+        "vaddr": "0x20000000",
+        "paddr": "0x20000000",
+        "file_bytes": 0,
+        "memory_bytes": 1264
+      },
+      {
+        "vaddr": "0x20018000",
+        "paddr": "0x20018000",
+        "file_bytes": 0,
+        "memory_bytes": 32768
+      }
+    ],
+    "elf_sha256": "39691299ce4d28a158ff50e3ed7d6975fb4eec7f1ec484d11f72ddc0590d9882"
+  },
+  "firmware_bytes": 29640,
+  "firmware_sha256": "0b09566a5c3add880303aac7a6ec53b2a5a46ecf49b3a9f1eab19bb79a0fc301",
+  "commands": [
+    {
+      "name": "pin",
+      "returncode": 0
+    },
+    {
+      "name": "upstream-status",
+      "returncode": 0
+    },
+    {
+      "name": "host-build",
+      "returncode": 0
+    },
+    {
+      "name": "host-corpus",
+      "returncode": 0
+    },
+    {
+      "name": "acvp-build-512",
+      "returncode": 0
+    },
+    {
+      "name": "acvp-build-768",
+      "returncode": 0
+    },
+    {
+      "name": "acvp-build-1024",
+      "returncode": 0
+    },
+    {
+      "name": "ML-KEM-keyGen-FIPS203",
+      "returncode": 0
+    },
+    {
+      "name": "ML-KEM-encapDecap-FIPS203",
+      "returncode": 0
+    },
+    {
+      "name": "ML-KEM-encapDecap-FIPS203-tr1",
+      "returncode": 0
+    },
+    {
+      "name": "arm-mlkem-probe",
+      "returncode": 0
+    },
+    {
+      "name": "arm-validation",
+      "returncode": 0
+    },
+    {
+      "name": "arm-startup",
+      "returncode": 0
+    },
+    {
+      "name": "arm-link",
+      "returncode": 0
+    },
+    {
+      "name": "arm-size",
+      "returncode": 0
+    },
+    {
+      "name": "arm-disassembly",
+      "returncode": 0
+    },
+    {
+      "name": "arm-objcopy",
+      "returncode": 0
+    }
+  ]
+}
