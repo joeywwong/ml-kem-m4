@@ -5,7 +5,10 @@
 /validation/publication-export/
 
 # Local instructions; not required to reproduce this repository
-/docs/
+/docs/*
+!/docs/images/
+/docs/images/*
+!/docs/images/stm32f407-board.jpg
 
 # Python, editors, and operating systems
 __pycache__/

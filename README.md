@@ -21,6 +21,18 @@ The longer-term objective is to extend these implementation-level measurements t
 
 Completed experiments are documented with measurement data, analysis scripts, reproducibility instructions, and limitations. The cycle measurements reported so far do not establish side-channel resistance, and no physical ML-KEM leakage or key-recovery attack has yet been demonstrated.
 
+
+<p align="center">
+  <img src="docs/images/stm32f407-board.jpg"
+       alt="STM32F407 development board used for ML-KEM experiments"
+       width="400">
+</p>
+
+<p align="center">
+  <em>STM32F407 Cortex-M4 development board used for
+  ML-KEM-768 validation and cycle profiling.</em>
+</p>
+
 ## What this project demonstrates — short summary
 
 **2026-11-06 on-device operation profiling:** a new matched baseline and DWT-instrumented
