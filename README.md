@@ -6,6 +6,23 @@ This repository records real ML-KEM-768 execution on a tested STM32F407 board, i
 
 ## What this project demonstrates — short summary
 
+**2026-11-06 on-device operation profiling:** a new matched baseline and DWT-instrumented
+derivative both passed 100 public inputs across three reset-started hardware runs.
+The secret/ciphertext polynomial-vector multiplication region in `mlk_indcpa_dec`
+measured **12,854 raw cycles in all 300 valid-call observations**, approximately
+**803.375 microseconds at nominal 16 MHz**, with a median paired fraction of
+**0.685478%** of instrumented decapsulation. Fresh host checks passed 100 corpus
+cases and 435 pinned ACVP cases per build. The original firmware was restored,
+full 1 MiB readback/hash verified, and restarted; the option word was unchanged.
+See the [new report and plot](validation/evidence/basemul-20261106/analysis/REPORT.md),
+[raw runs](validation/evidence/basemul-20261106/), and
+[restoration record](validation/evidence/basemul-20261106/restoration.json).
+Counts include profiling overhead. The instrumented image's median matched
+decapsulation count was 4,823 cycles lower than baseline; this descriptive build
+difference does not isolate instrumentation overhead or demonstrate an optimization.
+Constant observed region counts do not establish side-channel resistance.
+This experiment collected processor cycles, with no power/EM acquisition.
+
 **2026-11-01 build-only continuation:** a new
 [instrumentation preparation script](validation/scripts/prepare_leakage_probe.py)
 creates an isolated derivative around secret/ciphertext polynomial multiplication.

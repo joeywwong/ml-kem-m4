@@ -1,0 +1,119 @@
+{
+  "status": "PASS HOST AND BUILD; DEVICE NOT RUN",
+  "upstream": "08e1f3881ec140f79c2d1c14e482a32a782c5312",
+  "samples": 100,
+  "report_version": 2,
+  "report_words": 696,
+  "report_bytes": 2784,
+  "record_columns": [
+    "keygen_cycles",
+    "encaps_cycles",
+    "decaps_cycles",
+    "basemul_cycles",
+    "valid_probe_calls",
+    "all_probe_calls"
+  ],
+  "coins_sha256": "bdbcbdbcf3e51abe98a834bed485fb8be8f5e4c23ed72363a9cfaf4355a87b17",
+  "original_indcpa_sha256": "574e812a6bc5b7771191546ae8be409468adfbba85312e0a92842ef572b2a74d",
+  "modes": {
+    "baseline": {
+      "host_corpus": "PASS",
+      "host_cases": 100,
+      "independent_shake256_checks": 100,
+      "expected_host_hook_calls": 0,
+      "acvp": "PASS",
+      "acvp_cases": 435,
+      "elf": {
+        "status": "PASS",
+        "flash_limit_kib": 512,
+        "ram_limit_kib": 128,
+        "entry": "0x800312d",
+        "segments": [
+          {
+            "vaddr": "0x8000000",
+            "paddr": "0x8000000",
+            "file_bytes": 29704,
+            "memory_bytes": 29704
+          },
+          {
+            "vaddr": "0x20000ae0",
+            "paddr": "0x8007408",
+            "file_bytes": 0,
+            "memory_bytes": 4816
+          },
+          {
+            "vaddr": "0x20000000",
+            "paddr": "0x20000000",
+            "file_bytes": 0,
+            "memory_bytes": 2784
+          },
+          {
+            "vaddr": "0x20018000",
+            "paddr": "0x20018000",
+            "file_bytes": 0,
+            "memory_bytes": 32768
+          }
+        ],
+        "elf_sha256": "8d6ba675a767867f6ed0794609113e4b46368f94eac747a16e295bffac3f0ebb"
+      },
+      "firmware_bytes": 29704,
+      "firmware_sha256": "d001341bac673095aab217acb2e29ee6e017e43382497ad40fc653288bf133f3",
+      "derived_indcpa_sha256": "3cb6d6274662bd41bbbd01c0108621c404c11a9857daaf0375d7999023d225f8",
+      "harness_sha256": "3ca054b2f4dab5806f9dec1308c3d007f72aa8da126cb7c262fd196bd6c573cc"
+    },
+    "instrumented": {
+      "host_corpus": "PASS",
+      "host_cases": 100,
+      "independent_shake256_checks": 100,
+      "expected_host_hook_calls": 300,
+      "acvp": "PASS",
+      "acvp_cases": 435,
+      "elf": {
+        "status": "PASS",
+        "flash_limit_kib": 512,
+        "ram_limit_kib": 128,
+        "entry": "0x8003181",
+        "segments": [
+          {
+            "vaddr": "0x8000000",
+            "paddr": "0x8000000",
+            "file_bytes": 29800,
+            "memory_bytes": 29800
+          },
+          {
+            "vaddr": "0x20000ae0",
+            "paddr": "0x8007468",
+            "file_bytes": 0,
+            "memory_bytes": 4816
+          },
+          {
+            "vaddr": "0x20000000",
+            "paddr": "0x20000000",
+            "file_bytes": 0,
+            "memory_bytes": 2784
+          },
+          {
+            "vaddr": "0x20018000",
+            "paddr": "0x20018000",
+            "file_bytes": 0,
+            "memory_bytes": 32768
+          }
+        ],
+        "elf_sha256": "37b3b11606451d19735172672968466575a247cec5e8ad70cbec96b7c2c26493"
+      },
+      "firmware_bytes": 29800,
+      "firmware_sha256": "524a0f7f587bfa5821dc6b76edefb1ec694ecdc63371ffd00fc08f68ff00d69c",
+      "derived_indcpa_sha256": "b846dea16b76f3b2e9015351d623d657e28c65ecffa84e53b5200e58ab8b92fc",
+      "harness_sha256": "3ca054b2f4dab5806f9dec1308c3d007f72aa8da126cb7c262fd196bd6c573cc"
+    }
+  },
+  "configuration": "existing VG linker configuration; additional 512 KiB ELF bounds check; 128 KiB main SRAM; no CCM",
+  "measurement": "raw DWT counts; basemul region excludes public NTT/cache and inverse NTT; valid call captured before rejection tests",
+  "limitations": [
+    "No GPIO/analog capture",
+    "Nominal 16 MHz, not externally measured",
+    "Instrumented whole-decapsulation includes profiling overhead",
+    "Matched build comparison can also reflect code-layout changes",
+    "Three reset repetitions of 100 inputs, not 300 independent inputs"
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "status": "MEASURED DEVICE CYCLES; PASS",
+  "parameter_set": 768,
+  "unique_test_inputs": 100,
+  "reset_repetitions_per_mode": 3,
+  "configured_clock_hz": 16000000,
+  "modes": {
+    "baseline": {
+      "keygen_cycles": {
+        "observations": 300,
+        "median": 1449944.5,
+        "q1": 1449668.0,
+        "q3": 1450166.75,
+        "iqr": 498.75,
+        "min": 1448912,
+        "max": 1542000
+      },
+      "encaps_cycles": {
+        "observations": 300,
+        "median": 1520555.0,
+        "q1": 1520279.25,
+        "q3": 1520778.5,
+        "iqr": 499.25,
+        "min": 1519524,
+        "max": 1603163
+      },
+      "decaps_cycles": {
+        "observations": 300,
+        "median": 1880012.0,
+        "q1": 1879734.25,
+        "q3": 1880240.25,
+        "iqr": 506.0,
+        "min": 1878996,
+        "max": 1962685
+      },
+      "empty_bracket_cycles": {
+        "observations": 192,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156
+    },
+    "instrumented": {
+      "keygen_cycles": {
+        "observations": 300,
+        "median": 1446345.5,
+        "q1": 1446069.0,
+        "q3": 1446567.75,
+        "iqr": 498.75,
+        "min": 1445313,
+        "max": 1538353
+      },
+      "encaps_cycles": {
+        "observations": 300,
+        "median": 1516264.0,
+        "q1": 1515988.25,
+        "q3": 1516487.5,
+        "iqr": 499.25,
+        "min": 1515233,
+        "max": 1598824
+      },
+      "decaps_cycles": {
+        "observations": 300,
+        "median": 1875189.0,
+        "q1": 1874911.25,
+        "q3": 1875417.25,
+        "iqr": 506.0,
+        "min": 1874173,
+        "max": 1957814
+      },
+      "empty_bracket_cycles": {
+        "observations": 192,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156,
+      "basemul_cycles": {
+        "observations": 300,
+        "median": 12854.0,
+        "q1": 12854.0,
+        "q3": 12854.0,
+        "iqr": 0.0,
+        "min": 12854,
+        "max": 12854
+      },
+      "paired_basemul_fraction_percent": {
+        "observations": 300,
+        "median": 0.6854775705605025,
+        "q1": 0.6853941436232757,
+        "q3": 0.6855791174118866,
+        "iqr": 0.0001849737886109315,
+        "min": 0.6565485791806576,
+        "max": 0.6858491718747416
+      },
+      "basemul_nominal_microseconds": {
+        "observations": 300,
+        "median": 803.375,
+        "q1": 803.375,
+        "q3": 803.375,
+        "iqr": 0.0,
+        "min": 803.375,
+        "max": 803.375
+      }
+    }
+  },
+  "per_run": [
+    {
+      "mode": "baseline",
+      "repetition": 1,
+      "decaps_cycles": {
+        "observations": 100,
+        "median": 1880012.0,
+        "q1": 1879734.25,
+        "q3": 1880240.25,
+        "iqr": 506.0,
+        "min": 1878996,
+        "max": 1962685
+      },
+      "basemul_cycles": null,
+      "empty_bracket_cycles": {
+        "observations": 64,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156,
+      "total_probe_calls": 0
+    },
+    {
+      "mode": "baseline",
+      "repetition": 2,
+      "decaps_cycles": {
+        "observations": 100,
+        "median": 1880012.0,
+        "q1": 1879734.25,
+        "q3": 1880240.25,
+        "iqr": 506.0,
+        "min": 1878996,
+        "max": 1962685
+      },
+      "basemul_cycles": null,
+      "empty_bracket_cycles": {
+        "observations": 64,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156,
+      "total_probe_calls": 0
+    },
+    {
+      "mode": "baseline",
+      "repetition": 3,
+      "decaps_cycles": {
+        "observations": 100,
+        "median": 1880012.0,
+        "q1": 1879734.25,
+        "q3": 1880240.25,
+        "iqr": 506.0,
+        "min": 1878996,
+        "max": 1962685
+      },
+      "basemul_cycles": null,
+      "empty_bracket_cycles": {
+        "observations": 64,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156,
+      "total_probe_calls": 0
+    },
+    {
+      "mode": "instrumented",
+      "repetition": 1,
+      "decaps_cycles": {
+        "observations": 100,
+        "median": 1875189.0,
+        "q1": 1874911.25,
+        "q3": 1875417.25,
+        "iqr": 506.0,
+        "min": 1874173,
+        "max": 1957814
+      },
+      "basemul_cycles": {
+        "observations": 100,
+        "median": 12854.0,
+        "q1": 12854.0,
+        "q3": 12854.0,
+        "iqr": 0.0,
+        "min": 12854,
+        "max": 12854
+      },
+      "empty_bracket_cycles": {
+        "observations": 64,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156,
+      "total_probe_calls": 300
+    },
+    {
+      "mode": "instrumented",
+      "repetition": 2,
+      "decaps_cycles": {
+        "observations": 100,
+        "median": 1875189.0,
+        "q1": 1874911.25,
+        "q3": 1875417.25,
+        "iqr": 506.0,
+        "min": 1874173,
+        "max": 1957814
+      },
+      "basemul_cycles": {
+        "observations": 100,
+        "median": 12854.0,
+        "q1": 12854.0,
+        "q3": 12854.0,
+        "iqr": 0.0,
+        "min": 12854,
+        "max": 12854
+      },
+      "empty_bracket_cycles": {
+        "observations": 64,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156,
+      "total_probe_calls": 300
+    },
+    {
+      "mode": "instrumented",
+      "repetition": 3,
+      "decaps_cycles": {
+        "observations": 100,
+        "median": 1875189.0,
+        "q1": 1874911.25,
+        "q3": 1875417.25,
+        "iqr": 506.0,
+        "min": 1874173,
+        "max": 1957814
+      },
+      "basemul_cycles": {
+        "observations": 100,
+        "median": 12854.0,
+        "q1": 12854.0,
+        "q3": 12854.0,
+        "iqr": 0.0,
+        "min": 12854,
+        "max": 12854
+      },
+      "empty_bracket_cycles": {
+        "observations": 64,
+        "median": 8.0,
+        "q1": 8.0,
+        "q3": 8.0,
+        "iqr": 0.0,
+        "min": 8,
+        "max": 8
+      },
+      "stack_high_water_bytes": 18156,
+      "total_probe_calls": 300
+    }
+  ],
+  "restoration": {
+    "status": "PASS",
+    "bytes": 1048576,
+    "expected_sha256": "b2f05184ed6327f11f53da240ea76247746bc0f12221df5f416a33e1bc0b72c6",
+    "original_restarted": true,
+    "sha256": "b2f05184ed6327f11f53da240ea76247746bc0f12221df5f416a33e1bc0b72c6",
+    "option_word_unchanged": true
+  },
+  "scope": "On-device DWT profiling of the secret/ciphertext polynomial-vector multiplication/accumulation in mlk_indcpa_dec",
+  "limitations": [
+    "No power/EM traces, GPIO trigger, CPA, key recovery or masking evaluation",
+    "Raw counts include timing-bracket/call/setup overhead; no automatic subtraction",
+    "Empty-bracket calibration is indicative, not an exact correction for the compiled call site",
+    "Whole instrumented decapsulation includes profiling and hook bookkeeping",
+    "Nominal HSI16 clock; frequency not externally measured",
+    "Three reset repetitions of the same 100 public test inputs on one board in one session",
+    "Baseline runs precede instrumented runs; comparison can include time/order and code-layout effects",
+    "SWD remains attached; first RAM read after 58 s, not during most computation",
+    "No timing-security conclusion follows from the observed variation",
+    "Existing VG configuration used as requested; this experiment does not establish physical chip identity"
+  ],
+  "matched_decapsulation_delta_cycles": {
+    "observations": 300,
+    "median": -4823.0,
+    "q1": -4823.0,
+    "q3": -4823.0,
+    "iqr": 0.0,
+    "min": -4871,
+    "max": -4823
+  },
+  "matched_delta_interpretation": "Same input and repetition index; descriptive build difference, not an isolated instruction-overhead estimate"
+}

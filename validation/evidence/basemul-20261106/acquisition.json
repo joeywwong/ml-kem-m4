@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "runs": 6,
+  "unique_inputs": 100,
+  "repetitions_per_mode": 3,
+  "run_order": [
+    "baseline",
+    "baseline",
+    "baseline",
+    "instrumented",
+    "instrumented",
+    "instrumented"
+  ],
+  "preflight": {
+    "status": "PASS",
+    "bytes": 1048576,
+    "sha256": "b2f05184ed6327f11f53da240ea76247746bc0f12221df5f416a33e1bc0b72c6",
+    "matches_historical_original": true,
+    "configuration": "existing VG configuration as requested by owner"
+  },
+  "experiment_error": null,
+  "scope": "DWT processor cycles; no power/EM waveforms",
+  "polling": "58-second first wait after each reset; later polls at 5 seconds if required"
+}

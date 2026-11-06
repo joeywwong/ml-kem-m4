@@ -1,0 +1,153 @@
+08001b64 <lab_profile_empty>:
+ 8001b64:	f3bf 8f4f 	dsb	sy
+ 8001b68:	f3bf 8f6f 	isb	sy
+ 8001b6c:	4b0b      	ldr	r3, [pc, #44]	@ (8001b9c <lab_profile_empty+0x38>)
+ 8001b6e:	4a0c      	ldr	r2, [pc, #48]	@ (8001ba0 <lab_profile_empty+0x3c>)
+ 8001b70:	6859      	ldr	r1, [r3, #4]
+ 8001b72:	6011      	str	r1, [r2, #0]
+ 8001b74:	f3bf 8f4f 	dsb	sy
+ 8001b78:	f3bf 8f6f 	isb	sy
+ 8001b7c:	685b      	ldr	r3, [r3, #4]
+ 8001b7e:	6811      	ldr	r1, [r2, #0]
+ 8001b80:	4a08      	ldr	r2, [pc, #32]	@ (8001ba4 <lab_profile_empty+0x40>)
+ 8001b82:	4809      	ldr	r0, [pc, #36]	@ (8001ba8 <lab_profile_empty+0x44>)
+ 8001b84:	1a5b      	subs	r3, r3, r1
+ 8001b86:	6013      	str	r3, [r2, #0]
+ 8001b88:	6803      	ldr	r3, [r0, #0]
+ 8001b8a:	4908      	ldr	r1, [pc, #32]	@ (8001bac <lab_profile_empty+0x48>)
+ 8001b8c:	3301      	adds	r3, #1
+ 8001b8e:	6003      	str	r3, [r0, #0]
+ 8001b90:	680b      	ldr	r3, [r1, #0]
+ 8001b92:	3301      	adds	r3, #1
+ 8001b94:	600b      	str	r3, [r1, #0]
+ 8001b96:	6810      	ldr	r0, [r2, #0]
+ 8001b98:	4770      	bx	lr
+ 8001b9a:	bf00      	nop
+ 8001b9c:	e0001000 	.word	0xe0001000
+ 8001ba0:	20000aec 	.word	0x20000aec
+ 8001ba4:	20000ae8 	.word	0x20000ae8
+ 8001ba8:	20000ae4 	.word	0x20000ae4
+ 8001bac:	20000ae0 	.word	0x20000ae0
+
+08001bb0 <mlkem_indcpa_dec>:
+ 8001bb0:	e92d 4ff0 	stmdb	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, lr}
+ 8001bb4:	f5ad 5d98 	sub.w	sp, sp, #4864	@ 0x1300
+ 8001bb8:	b087      	sub	sp, #28
+ 8001bba:	f10d 041f 	add.w	r4, sp, #31
+ 8001bbe:	f024 041f 	bic.w	r4, r4, #31
+ 8001bc2:	f504 66c0 	add.w	r6, r4, #1536	@ 0x600
+ 8001bc6:	460d      	mov	r5, r1
+ 8001bc8:	f504 6b00 	add.w	fp, r4, #2048	@ 0x800
+ 8001bcc:	4681      	mov	r9, r0
+ 8001bce:	4630      	mov	r0, r6
+ 8001bd0:	4617      	mov	r7, r2
+ 8001bd2:	f504 6a20 	add.w	sl, r4, #2560	@ 0xa00
+ 8001bd6:	f7fe fb93 	bl	8000300 <mlk_poly_decompress_d10_c>
+ 8001bda:	f505 71a0 	add.w	r1, r5, #320	@ 0x140
+ 8001bde:	4658      	mov	r0, fp
+ 8001be0:	f7fe fb8e 	bl	8000300 <mlk_poly_decompress_d10_c>
+ 8001be4:	f505 7120 	add.w	r1, r5, #640	@ 0x280
+ 8001be8:	4650      	mov	r0, sl
+ 8001bea:	f7fe fb89 	bl	8000300 <mlk_poly_decompress_d10_c>
+ 8001bee:	f505 7170 	add.w	r1, r5, #960	@ 0x3c0
+ 8001bf2:	f504 5588 	add.w	r5, r4, #4352	@ 0x1100
+ 8001bf6:	4628      	mov	r0, r5
+ 8001bf8:	f7fe fb64 	bl	80002c4 <mlk_poly_decompress_d4_c>
+ 8001bfc:	4639      	mov	r1, r7
+ 8001bfe:	4620      	mov	r0, r4
+ 8001c00:	f7fe fbd8 	bl	80003b4 <mlk_poly_frombytes_c>
+ 8001c04:	f507 71c0 	add.w	r1, r7, #384	@ 0x180
+ 8001c08:	f504 7000 	add.w	r0, r4, #512	@ 0x200
+ 8001c0c:	f7fe fbd2 	bl	80003b4 <mlk_poly_frombytes_c>
+ 8001c10:	f507 7140 	add.w	r1, r7, #768	@ 0x300
+ 8001c14:	f504 6080 	add.w	r0, r4, #1024	@ 0x400
+ 8001c18:	f7fe fbcc 	bl	80003b4 <mlk_poly_frombytes_c>
+ 8001c1c:	4630      	mov	r0, r6
+ 8001c1e:	f7ff fe8b 	bl	8001938 <mlk_poly_ntt_c>
+ 8001c22:	4658      	mov	r0, fp
+ 8001c24:	f7ff fe88 	bl	8001938 <mlk_poly_ntt_c>
+ 8001c28:	f504 6840 	add.w	r8, r4, #3072	@ 0xc00
+ 8001c2c:	4650      	mov	r0, sl
+ 8001c2e:	f7ff fe83 	bl	8001938 <mlk_poly_ntt_c>
+ 8001c32:	4631      	mov	r1, r6
+ 8001c34:	4640      	mov	r0, r8
+ 8001c36:	f7fe fbfb 	bl	8000430 <mlk_poly_mulcache_compute_c>
+ 8001c3a:	4659      	mov	r1, fp
+ 8001c3c:	f504 6050 	add.w	r0, r4, #3328	@ 0xd00
+ 8001c40:	f7fe fbf6 	bl	8000430 <mlk_poly_mulcache_compute_c>
+ 8001c44:	4651      	mov	r1, sl
+ 8001c46:	f504 6060 	add.w	r0, r4, #3584	@ 0xe00
+ 8001c4a:	f7fe fbf1 	bl	8000430 <mlk_poly_mulcache_compute_c>
+ 8001c4e:	f3bf 8f4f 	dsb	sy
+ 8001c52:	f3bf 8f6f 	isb	sy
+ 8001c56:	f8df b0bc 	ldr.w	fp, [pc, #188]	@ 8001d14 <mlkem_indcpa_dec+0x164>
+ 8001c5a:	f8df a0bc 	ldr.w	sl, [pc, #188]	@ 8001d18 <mlkem_indcpa_dec+0x168>
+ 8001c5e:	f8db 3004 	ldr.w	r3, [fp, #4]
+ 8001c62:	f8ca 3000 	str.w	r3, [sl]
+ 8001c66:	f504 6770 	add.w	r7, r4, #3840	@ 0xf00
+ 8001c6a:	4643      	mov	r3, r8
+ 8001c6c:	4632      	mov	r2, r6
+ 8001c6e:	4621      	mov	r1, r4
+ 8001c70:	4638      	mov	r0, r7
+ 8001c72:	f7fe fc9f 	bl	80005b4 <mlk_polyvec_basemul_acc_montgomery_cached_c>
+ 8001c76:	f3bf 8f4f 	dsb	sy
+ 8001c7a:	f3bf 8f6f 	isb	sy
+ 8001c7e:	f8db 3004 	ldr.w	r3, [fp, #4]
+ 8001c82:	f8da 2000 	ldr.w	r2, [sl]
+ 8001c86:	4925      	ldr	r1, [pc, #148]	@ (8001d1c <mlkem_indcpa_dec+0x16c>)
+ 8001c88:	1a9b      	subs	r3, r3, r2
+ 8001c8a:	4a25      	ldr	r2, [pc, #148]	@ (8001d20 <mlkem_indcpa_dec+0x170>)
+ 8001c8c:	6013      	str	r3, [r2, #0]
+ 8001c8e:	680b      	ldr	r3, [r1, #0]
+ 8001c90:	4a24      	ldr	r2, [pc, #144]	@ (8001d24 <mlkem_indcpa_dec+0x174>)
+ 8001c92:	3301      	adds	r3, #1
+ 8001c94:	600b      	str	r3, [r1, #0]
+ 8001c96:	6813      	ldr	r3, [r2, #0]
+ 8001c98:	4638      	mov	r0, r7
+ 8001c9a:	3301      	adds	r3, #1
+ 8001c9c:	6013      	str	r3, [r2, #0]
+ 8001c9e:	f7fe fbfd 	bl	800049c <mlk_poly_invntt_tomont_c>
+ 8001ca2:	1eab      	subs	r3, r5, #2
+ 8001ca4:	f604 61fe 	addw	r1, r4, #3838	@ 0xefe
+ 8001ca8:	f505 7cff 	add.w	ip, r5, #510	@ 0x1fe
+ 8001cac:	f833 2f02 	ldrh.w	r2, [r3, #2]!
+ 8001cb0:	f831 0f02 	ldrh.w	r0, [r1, #2]!
+ 8001cb4:	459c      	cmp	ip, r3
+ 8001cb6:	eba2 0200 	sub.w	r2, r2, r0
+ 8001cba:	801a      	strh	r2, [r3, #0]
+ 8001cbc:	d1f6      	bne.n	8001cac <mlkem_indcpa_dec+0xfc>
+ 8001cbe:	4628      	mov	r0, r5
+ 8001cc0:	f7fe fb92 	bl	80003e8 <mlk_poly_reduce_c>
+ 8001cc4:	4629      	mov	r1, r5
+ 8001cc6:	4648      	mov	r0, r9
+ 8001cc8:	f7ff ff28 	bl	8001b1c <mlkem_poly_tomsg>
+ 8001ccc:	f44f 7240 	mov.w	r2, #768	@ 0x300
+ 8001cd0:	2100      	movs	r1, #0
+ 8001cd2:	4640      	mov	r0, r8
+ 8001cd4:	f001 fab2 	bl	800323c <memset>
+ 8001cd8:	f44f 7200 	mov.w	r2, #512	@ 0x200
+ 8001cdc:	2100      	movs	r1, #0
+ 8001cde:	4638      	mov	r0, r7
+ 8001ce0:	f001 faac 	bl	800323c <memset>
+ 8001ce4:	f44f 7200 	mov.w	r2, #512	@ 0x200
+ 8001ce8:	2100      	movs	r1, #0
+ 8001cea:	4628      	mov	r0, r5
+ 8001cec:	f001 faa6 	bl	800323c <memset>
+ 8001cf0:	f44f 62c0 	mov.w	r2, #1536	@ 0x600
+ 8001cf4:	2100      	movs	r1, #0
+ 8001cf6:	4620      	mov	r0, r4
+ 8001cf8:	f001 faa0 	bl	800323c <memset>
+ 8001cfc:	f44f 62c0 	mov.w	r2, #1536	@ 0x600
+ 8001d00:	2100      	movs	r1, #0
+ 8001d02:	4630      	mov	r0, r6
+ 8001d04:	f001 fa9a 	bl	800323c <memset>
+ 8001d08:	2000      	movs	r0, #0
+ 8001d0a:	f50d 5d98 	add.w	sp, sp, #4864	@ 0x1300
+ 8001d0e:	b007      	add	sp, #28
+ 8001d10:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+ 8001d14:	e0001000 	.word	0xe0001000
+ 8001d18:	20000aec 	.word	0x20000aec
+ 8001d1c:	20000ae4 	.word	0x20000ae4
+ 8001d20:	20000ae8 	.word	0x20000ae8
+ 8001d24:	20000ae0 	.word	0x20000ae0
+

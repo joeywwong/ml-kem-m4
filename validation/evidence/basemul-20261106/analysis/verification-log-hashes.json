@@ -1,0 +1,66 @@
+{
+  "arm-toolchain.txt": {
+    "original_log_sha256": "38e025aff417c4c5305ef5641f6883ecd3af95a2b66971c7443d039f1aadbf42",
+    "sanitized_copy_sha256": "38e025aff417c4c5305ef5641f6883ecd3af95a2b66971c7443d039f1aadbf42"
+  },
+  "baseline-acvp-build-1024.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "baseline-acvp-build-512.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "baseline-acvp-build-768.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "baseline-host-build.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "baseline-ML-KEM-encapDecap-FIPS203-tr1.txt": {
+    "original_log_sha256": "1e58f14d733c546c6ab1cb89e0ca5ccc342e4f5dcdae446c178b076027cc0863",
+    "sanitized_copy_sha256": "7c708a51b72fa9250683a8f521aacc312845ffcb331626c9e0873eb3cea9031e"
+  },
+  "baseline-ML-KEM-encapDecap-FIPS203.txt": {
+    "original_log_sha256": "fd4ab5dbf0a4e44acc7c76a8290d34212fbd8c983a0dd68ee57e0773af72cf90",
+    "sanitized_copy_sha256": "a88071364c099a1a446a89658c4b89c60a6e69b7eee24cad2ff99d6e622337f7"
+  },
+  "baseline-ML-KEM-keyGen-FIPS203.txt": {
+    "original_log_sha256": "a19386e48a1dd8cd5af6f1c6bc7f3abcaf510274c9b475368787146d298b0c29",
+    "sanitized_copy_sha256": "e10456091d73543b96de54402c93a62519df9f6054339b61182ae3091a96d56b"
+  },
+  "host-toolchain.txt": {
+    "original_log_sha256": "b413ab0bf4deba50228036b22cfc5748e4022116ef1b9902602779e9a4a13b50",
+    "sanitized_copy_sha256": "b413ab0bf4deba50228036b22cfc5748e4022116ef1b9902602779e9a4a13b50"
+  },
+  "instrumented-acvp-build-1024.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "instrumented-acvp-build-512.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "instrumented-acvp-build-768.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "instrumented-host-build.txt": {
+    "original_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitized_copy_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "instrumented-ML-KEM-encapDecap-FIPS203-tr1.txt": {
+    "original_log_sha256": "0c89d9034c8017d63efe307721b44c3880e0103c1ddbc262a58e215210060cce",
+    "sanitized_copy_sha256": "55d09f48774d6a6cf63b967c137140a585038bfdd1371c1b76fde8c767f9f772"
+  },
+  "instrumented-ML-KEM-encapDecap-FIPS203.txt": {
+    "original_log_sha256": "439a6804190e8e4afb955217745348941ee9122093376846c17a7e63313569e4",
+    "sanitized_copy_sha256": "d60cebc33e2233f885e62f04a7effae11fba4b2c52e9d58537ada55c49dbfd63"
+  },
+  "instrumented-ML-KEM-keyGen-FIPS203.txt": {
+    "original_log_sha256": "a0c2feed7641fa8b66cdffe775b9b39e80e881de95ac355f4535842190d8ddde",
+    "sanitized_copy_sha256": "d4c97fefe6ecac7feed5ccb01d9bcbbaba2306028968955159612b50ea8e06a7"
+  }
+}
