@@ -2,7 +2,24 @@
 
 ## Overview
 
-This repository records real ML-KEM-768 execution on a tested STM32F407 board, identified by its owner as an STM32F407G-DISC1, using the unmodified portable C backend of mlkem-native. ML-KEM is NIST's standardized lattice-based key-encapsulation mechanism for establishing shared secrets in post-quantum cryptography. Embedded execution makes implementation cost and resource constraints concrete: this project connects host correctness tests to on-device checks, cycle measurements, and memory accounting. The completed experiment passed host functional suites for all three parameter sets, 435 NIST ACVP cases, and 100 ML-KEM-768 inputs repeated over three hardware runs. It also recorded restoration of the original firmware. The contribution is the validation harness, reproducibility record, and analysis of this configuration. It provides preparation for cryptographic implementation and future physical side-channel research; no leakage acquisition or attack was performed.
+This project investigates the implementation, performance, and side-channel security of ML-KEM on an STM32F407 Cortex-M4 microcontroller, using the portable C implementation from [mlkem-native](https://github.com/pq-code-package/mlkem-native).
+
+The work began with functional correctness testing on a laptop (host), followed by running ML-KEM-768 on the STM32F407 development board (device). The implementation was validated against NIST ACVP test vectors and host-generated test cases, with on-device measurements of key generation, encapsulation, decapsulation, and memory usage.
+
+The project has since progressed to **operation-level cycle profiling**. On 6 November 2026, I completed an experiment measuring the processor cycles required for polynomial-vector multiplication and accumulation during ML-KEM-768 decapsulation. Using 100 distinct test inputs across three hardware runs, the selected operation consistently measured **12,854 raw processor cycles** across 300 observations. The experiment also includes correctness verification, reproducible measurement records, and verified restoration of the original firmware.
+
+The longer-term objective is to extend these implementation-level measurements toward physical side-channel analysis and countermeasure evaluation.
+
+**Research progress and next steps:**
+
+- [x] Functional validation of ML-KEM using host tests and NIST ACVP vectors.
+- [x] ML-KEM-768 execution and full-operation benchmarking on STM32F407.
+- [x] Operation-level instrumentation, correctness testing, and on-device cycle profiling.
+- [ ] Physical power-trace acquisition from selected ML-KEM operations.
+- [ ] Physical side-channel leakage analysis and attack evaluation.
+- [ ] Implementation and evaluation of potential countermeasures.
+
+Completed experiments are documented with measurement data, analysis scripts, reproducibility instructions, and limitations. The cycle measurements reported so far do not establish side-channel resistance, and no physical ML-KEM leakage or key-recovery attack has yet been demonstrated.
 
 ## What this project demonstrates — short summary
 

@@ -1,10 +1,24 @@
-# STM32F407 ML-KEM-768 operation-level cycle profiling — 2026-11-06
+# ML-KEM-768 Operation-Level Cycle Profiling on STM32F407 — 6 November 2026
 
-**MEASURED DEVICE CYCLES; correctness checks and original-firmware restoration PASS.**
+## Experiment Summary
 
-This adds an on-device measurement of the secret/ciphertext polynomial-vector multiplication/accumulation
-inside `mlk_indcpa_dec`. Public ciphertext NTT/cache preparation and the following inverse NTT are outside
-the region. The exact compiled call is bracketed by DWT reads and compiler/DSB/ISB barriers.
+This experiment measures the processor cycles required for a selected polynomial-vector multiplication and accumulation operation during ML-KEM-768 decapsulation on an STM32F407 Cortex-M4 development board.
+
+Two firmware versions were prepared using the same underlying ML-KEM implementation:
+
+- **Baseline:** Measures complete ML-KEM operations without additional cycle measurements around the selected multiplication operation.
+- **Instrumented:** Adds cycle measurements around the selected multiplication and accumulation operation inside `mlk_indcpa_dec`.
+
+Both versions were executed on the STM32F407 using the same 100 test inputs across three separate hardware runs per version, producing 300 observations per version.
+
+**Main findings:**
+
+- The selected operation measured **12,854 raw processor cycles** in all 300 instrumented observations, equivalent to approximately **803.375 µs at the nominal 16 MHz clock frequency**.
+- The operation accounted for approximately **0.685% of instrumented decapsulation cycles** (median).
+- Both versions passed 100 additional host tests and 435 NIST ACVP test cases on the computer. The STM32 also produced the expected shared secrets and ciphertext-rejection results.
+- After the experiment, the board's original firmware was restored and verified using a complete 1 MiB flash-memory readback.
+
+**Scope:** The measurements use the STM32's internal DWT cycle counter. They do not include physical power or electromagnetic measurements, and they do not demonstrate a side-channel attack.
 
 ![Measured cycle profiling](cycle-profile.png)
 
@@ -17,6 +31,16 @@ the region. The exact compiled call is bracketed by DWT reads and compiler/DSB/I
 | Paired region / instrumented decapsulation (%) | 0.685478 | 0.000185 | 0.656549–0.685849 |
 | Instrumented empty bracket (cycles) | 8 | 0 | 8–8 |
 | Matched instrumented − baseline decapsulation (cycles) | -4,823 | 0 | -4,871–-4,823 |
+
+### Interpretation of Results
+
+The measured multiplication and accumulation region accounted for approximately 0.685% of the complete instrumented decapsulation cycle count.
+
+The instrumented firmware recorded a median of 4,823 fewer cycles for complete decapsulation than the baseline firmware. However, this does not demonstrate a performance improvement. Differences in compiled code layout, measurement order, or other uncontrolled factors may explain the result.
+
+The reported 12,854 cycles include measurement instrumentation and function-call overhead. The separate 8-cycle empty-bracket calibration cannot be directly subtracted to obtain the exact execution cost of the cryptographic operation.
+
+Although the measured region had identical cycle counts across the tested inputs, this does not establish constant-time security or resistance to physical side-channel attacks.
 
 There are **100 unique public deterministic inputs, repeated across three resets per build**:
 300 valid-decapsulation observations per build and 300 instrumented-region observations.
